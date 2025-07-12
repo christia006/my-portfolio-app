@@ -16,7 +16,7 @@ export const profile = {
     phone: "+62 838 2175 1692",
     email: "chutahaean372@gmail.com",
     address: "Jl Danau Singkarak LK II, Binjai, North Sumatra, Indonesia",
-    website: "www.reallygreatsite.com", // Ganti dengan website Anda jika ada
+    website: "my-portfolio-app-vpo5.vercel.app", // Ganti dengan website Anda jika ada
     github: "github.com/christia006",
     linkedin: "linkedin.com/in/christian-johannes-hutahaean", // Tambahkan LinkedIn
   },
