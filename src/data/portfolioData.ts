@@ -11,7 +11,7 @@ import skillshareImage from '../images/skillshare.png';
 export const profile = {
   name: "CHRISTIAN JOHANNES HUTAHAEAN",
   title: "SOFTWARE ENGINEERING & FULL STACK DEVELOPER",
-  bio: "Software Engineer & Full Stack Developer berpengalaman membangun aplikasi web end-to-end, mahir di backend (Golang, Node.js, PHP), REST API, dan database. Saat ini mendalami AI/ML Engineering dengan Python dan TensorFlow untuk solusi berbasis data.",
+  bio: "Software Engineer & Full Stack Developer with experience in building end-to-end web applications, proficient in backend (Golang, Node.js, PHP), REST API, and databases. Currently exploring AI/ML Engineering with Python and TensorFlow for data-driven solutions.",
   contact: {
     phone: "+62 838 2175 1692",
     email: "chutahaean372@gmail.com",
@@ -20,7 +20,7 @@ export const profile = {
     github: "github.com/christia006",
     linkedin: "linkedin.com/in/christian-johannes-hutahaean", // Tambahkan LinkedIn
   },
-  hobbies: ["Membaca", "Bermain Game"],
+  hobbies: [" reading   or  playing games."],
   reference: {
     name: "Amandeep KAUR HR",
     title: "Suvidha Foundation",
