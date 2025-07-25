@@ -1,29 +1,29 @@
 import React from 'react';
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-import { profile } from '../data/portfolioData';
 import { Container } from 'react-bootstrap';
+import { profile } from '../data/portfolioData';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-light py-4 text-center border-top border-secondary mt-auto"> {/* bg-gray-900, py-4, text-center, border-top, border-secondary, mt-auto for sticky footer */}
+    <footer className="bg-gray-900 text-light py-4 text-center border-top border-secondary mt-auto">
       <Container>
-        <div className="d-flex justify-content-center mb-3"> {/* d-flex, justify-content-center, mb-3 */}
+        <div className="d-flex justify-content-center mb-3">
           <a
-            href={`https://${profile.contact.github}`}
+            href="https://github.com/christia006"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 mx-3 hover-icon" // mx-3 for horizontal spacing, custom hover-icon
+            className="text-gray-400 mx-3 hover-icon"
           >
             <FaGithub size={28} />
           </a>
           <a
-            href={`mailto:${profile.contact.email}`}
+            href="mailto:chutahaean372@gmail.com"
             className="text-gray-400 mx-3 hover-icon"
           >
             <FaEnvelope size={28} />
           </a>
           <a
-            href="https://linkedin.com/in/christian-johannes-hutahaean"
+            href="https://www.linkedin.com/in/christianhutahaean"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 mx-3 hover-icon"
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <FaLinkedin size={28} />
           </a>
         </div>
-        <p className="text-sm text-gray-500 mb-0"> {/* text-sm (custom, or fs-6/7), text-gray-500, mb-0 */}
+        <p className="text-sm text-gray-500 mb-0">
           &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
         </p>
       </Container>
