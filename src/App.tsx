@@ -4,20 +4,22 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Experience from './sections/Experience';
+import Achievements from './sections/Achievements';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    
     <div className="d-flex flex-column min-vh-100 bg-dark text-light">
       <Navbar />
-    
       <main className="flex-grow-1">
         <Hero />
         <About />
         <Skills />
         <Projects />
+        <Experience />
+        <Achievements />
         <Contact />
       </main>
       <Footer />

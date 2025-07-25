@@ -4,10 +4,14 @@ import SectionHeader from '../components/SectionHeader';
 import { profile } from '../data/portfolioData';
 import { FaLightbulb } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
-import profileImage from '../images/ian.png'; // ✅ Import gambar baru
+import profileImage from '../images/ian.png';
 
 const About: React.FC = () => {
+  
   const currentEducation = profile.education && profile.education.length > 0 ? profile.education[0] : null;
+
+  // Ambil hobi, pastikan selalu array (fallback ke array kosong)
+  const hobbiesText = profile.hobbies?.join(', ').toLowerCase() || 'exploring new things';
 
   return (
     <section id="about" className="section-padding bg-gray-900 text-light">
@@ -22,13 +26,13 @@ const About: React.FC = () => {
         >
           <Row className="d-flex align-items-center">
             <Col md={4} className="d-flex justify-content-center mb-4 mb-md-0">
-              <div 
-                className="d-flex flex-column align-items-center justify-content-center rounded-circle shadow-lg overflow-hidden" 
+              <div
+                className="d-flex flex-column align-items-center justify-content-center rounded-circle shadow-lg overflow-hidden"
                 style={{ width: '250px', height: '250px' }}
               >
-                <img 
-                  src={profileImage} 
-                  alt="Profile" 
+                <img
+                  src={profileImage}
+                  alt="Profile"
                   className="img-fluid"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
@@ -46,11 +50,11 @@ const About: React.FC = () => {
                   <span className="text-secondary me-2">
                     <FaLightbulb className="d-inline-block align-middle" />
                   </span>
-                  GPA: {currentEducation.gpa} (Institut Teknologi Del)
+                  GPA: {currentEducation.gpa} ({currentEducation.institution})
                 </p>
               )}
               <p className="text-gray-200">
-                When I'm not coding, you can find me {profile.hobbies.join(', ').toLowerCase()}.
+                When I'm not coding, you can find me {hobbiesText}.
               </p>
             </Col>
           </Row>
