@@ -9,7 +9,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-5 bg-dark text-light"> {/* ganti section-padding → py-5 */}
+    <section id="contact" className="section-padding bg-gray-900 text-light">
       <Container>
         <SectionHeader title="Contact Me" subtitle="Let's Connect!" />
         <motion.div
@@ -17,68 +17,68 @@ const Contact: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="bg-secondary bg-opacity-10 p-5 rounded shadow-lg" 
+          className="bg-gray-800 p-4 p-md-5 rounded-4 shadow-lg"
         >
-          <Row className="g-5">
+          <Row className="g-4">
             <Col md={6}>
-              <div className="d-flex align-items-center mb-4">
-                <FaPhone className="text-primary fs-3 me-3" />
+              <div className="d-flex align-items-center mb-3">
+                <FaPhone className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">Phone</h4>
-                  <p className="mb-0">{profile.contact.phone}</p>
+                  <h6 className="fw-semibold text-secondary mb-0">Phone</h6>
+                  <p className="mb-0 small">{profile.contact.phone}</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center mb-4">
-                <FaEnvelope className="text-primary fs-3 me-3" />
+              <div className="d-flex align-items-center mb-3">
+                <FaEnvelope className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">Email</h4>
-                  <p className="mb-0">{profile.contact.email}</p>
+                  <h6 className="fw-semibold text-secondary mb-0">Email</h6>
+                  <p className="mb-0 small">{profile.email}</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center mb-4">
-                <FaMapMarkerAlt className="text-primary fs-3 me-3" />
+              <div className="d-flex align-items-center mb-3">
+                <FaMapMarkerAlt className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">Address</h4>
-                  <p className="mb-0">{profile.contact.address}</p>
+                  <h6 className="fw-semibold text-secondary mb-0">Address</h6>
+                  <p className="mb-0 small">{profile.contact.address}</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center mb-4">
-                <FaGlobe className="text-primary fs-3 me-3" />
+              <div className="d-flex align-items-center mb-3">
+                <FaGlobe className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">Website</h4>
+                  <h6 className="fw-semibold text-secondary mb-0">Website</h6>
                   <a
                     href={`https://${profile.contact.website}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-info"
+                    className="text-decoration-none text-info small"
                   >
                     {profile.contact.website}
                   </a>
                 </div>
               </div>
-              <div className="d-flex align-items-center mb-4">
-                <FaGithub className="text-primary fs-3 me-3" />
+              <div className="d-flex align-items-center mb-3">
+                <FaGithub className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">GitHub</h4>
+                  <h6 className="fw-semibold text-secondary mb-0">GitHub</h6>
                   <a
-                    href={`https://${profile.contact.github}`}
+                    href={`https://${profile.github}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-info"
+                    className="text-decoration-none text-info small"
                   >
-                    {profile.contact.github}
+                    {profile.github}
                   </a>
                 </div>
               </div>
               <div className="d-flex align-items-center">
-                <FaLinkedin className="text-primary fs-3 me-3" />
+                <FaLinkedin className="text-primary fs-4 me-3" />
                 <div>
-                  <h4 className="fs-6 fw-semibold text-secondary mb-0">LinkedIn</h4>
+                  <h6 className="fw-semibold text-secondary mb-0">LinkedIn</h6>
                   <a
-                    href="https://linkedin.com/in/christian-johannes-hutahaean"
+                    href={`https://${profile.contact.linkedin}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-decoration-none text-info"
+                    className="text-decoration-none text-info small"
                   >
                     christian-johannes-hutahaean
                   </a>
@@ -86,36 +86,39 @@ const Contact: React.FC = () => {
               </div>
             </Col>
             <Col md={6}>
-              <h3 className="h4 fw-bold text-primary mb-4">
-                Let's build something amazing together!
-              </h3>
-              <p className="mb-4">
-                Feel free to reach out for collaborations, project inquiries, or just to say hello.
-              </p>
+              <h5 className="fw-bold text-primary mb-3">Let's build something amazing together!</h5>
+              <p className="small text-gray-300 mb-4">Feel free to reach out for collaborations, project inquiries, or just to say hello.</p>
               <Form>
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-3" controlId="formName">
+                  <Form.Label className="small text-secondary">Your Full Name</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Enter your full name"
                     className="bg-dark text-light border-secondary"
                   />
                 </Form.Group>
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-3" controlId="formEmail">
+                  <Form.Label className="small text-secondary">Your Email Address</Form.Label>
                   <Form.Control
                     type="email"
-                    placeholder="Your Email"
+                    placeholder="Enter your email"
                     className="bg-dark text-light border-secondary"
                   />
                 </Form.Group>
-                <Form.Group className="mb-3">
+                <Form.Group className="mb-3" controlId="formMessage">
+                  <Form.Label className="small text-secondary">Your Message</Form.Label>
                   <Form.Control
                     as="textarea"
-                    rows={5}
-                    placeholder="Your Message"
+                    rows={4}
+                    placeholder="Write your message here..."
                     className="bg-dark text-light border-secondary"
                   />
                 </Form.Group>
-                <Button variant="primary" type="submit" className="w-100 py-3 fw-bold">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="w-100 py-2 fw-semibold"
+                >
                   Send Message
                 </Button>
               </Form>
