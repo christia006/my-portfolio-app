@@ -49,47 +49,47 @@ export const workExperience = [
 export const projects = [
   {
     title: "Simpin",
-    Description: ["Aplikasi desktop koperasi: kelola anggota, transaksi, dark mode, multibahasa."],
+    Description: ["SimPin: backend Java 23 untuk manajemen koperasi dengan login, transaksi, night mode, dan multi-language."],
     imageUrl: simpinImage 
   },
   {
     title: "NeuroSort",
-    Description: ["Mendeteksi dokumen, memahami konten, memudahkan pencarian cepat dan relevan."],
+    Description: ["Local AI: scan & classify .txt/.pdf/.docx, fast contextual search, store metadata in PostgreSQL. Built with Python, spaCy, scikit-learn, SQLAlchemy, Streamlit. Private, fast, no API keys."],
     imageUrl: neurosortImage 
   },
   {
     title: "SummAIze",
-    Description: ["Meringkas dokumen PDF atau teks panjang menjadi ringkasan informatif."],
+    Description: ["Summarize PDF and .txt files into actionable insights with local AI. Built with Python, FastAPI, spaCy, scikit-learn, SQLAlchemy, React, TypeScript."],
     imageUrl: summaizeImage 
   },
   {
     title: "WargaBuatin",
-    Description: ["Platform web kolaborasi komunitas untuk pelaporan kerusakan lingkungan realtime."],
+    Description: ["Fullstack Digital platform for green action: interactive maps, reports, education, community forum, and events. Built with React, Node.js, Express, PostgreSQL, Leaflet.js, Google Maps API."],
     imageUrl: wargabuatinImage 
   },
   {
     title: "InsightIQ",
-    Description: ["Menganalisis perilaku pengguna secara anonim menggunakan event-driven architecture."],
+    Description: ["Local user behavior analytics: track clicks, scrolls, and interaction time; store in PostgreSQL; visualize with Streamlit. Built with Python, pandas, scikit-learn, matplotlib, KMeans clustering."],
     imageUrl: insightiqImage 
   },
   {
     title: "SkillShare API",
-    Description: ["Backend berbagi keterampilan: autentikasi, manajemen kelas, pendaftaran kursus."],
+    Description: [" Go backend for sharing skills and short courses: JWT auth, class management, and user enrollments. Built with Go, Echo, GORM, PostgreSQL."],
     imageUrl: skillshareImage 
   },
   {
     title: "BukuNest",
-    Description: ["Platform Laravel digital library: auth, CRUD buku & genre, profil pengguna, komentar, role-based access."],
+    Description: ["Modern Laravel platform for digital library management: auth, CRUD books & genres, user profiles, comments, and role-based access. Built with Laravel, PHP, MySQL, JWT, Blade."],
     imageUrl: bukuImage 
   },
   {
     title: "GuardForms",
-    Description: ["Backend secure Google Forms: audit log, multi-role user, JWT & bcrypt hashing."],
+    Description: ["Backend Secure Google Forms data sync to PostgreSQL with JWT auth, audit logs, admin dashboard, multi-role access, and export features. Built with Node.js, Express.js, React, PostgreSQL."],
     imageUrl: guardImage 
   },
   {
     title: "BrightSeeds",
-    Description: ["Fun learning & puzzle games: reading, writing, math, path finding, Wumpus World AI."],
+    Description: ["Fun learning & puzzle games: reading, writing, math, path finding, Wumpus World AI, and pattern challenges. Built with React + Vite."],
     imageUrl: brightImage 
   },
 ];
