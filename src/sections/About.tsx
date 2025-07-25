@@ -1,16 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../components/SectionHeader';
-import { profile } from '../data/portfolioData';
-import { FaLightbulb } from 'react-icons/fa';
+import { profile, education } from '../data/portfolioData';
+import { FaGraduationCap, FaHeart } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
 import profileImage from '../images/ian.png';
 
 const About: React.FC = () => {
-  
-  const currentEducation = profile.education && profile.education.length > 0 ? profile.education[0] : null;
-
-  // Ambil hobi, pastikan selalu array (fallback ke array kosong)
+  const currentEducation = education.length > 0 ? education[0] : null;
   const hobbiesText = profile.hobbies?.join(', ').toLowerCase() || 'exploring new things';
 
   return (
@@ -22,13 +19,13 @@ const About: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="bg-gray-800 p-5 rounded shadow-lg"
+          className="bg-gray-800 p-4 p-md-5 rounded-4 shadow-lg"
         >
-          <Row className="d-flex align-items-center">
-            <Col md={4} className="d-flex justify-content-center mb-4 mb-md-0">
+          <Row className="align-items-center g-4">
+            <Col xs={12} md={4} className="text-center">
               <div
-                className="d-flex flex-column align-items-center justify-content-center rounded-circle shadow-lg overflow-hidden"
-                style={{ width: '250px', height: '250px' }}
+                className="rounded-circle overflow-hidden border border-3 border-primary shadow"
+                style={{ width: '200px', height: '200px', margin: '0 auto' }}
               >
                 <img
                   src={profileImage}
@@ -38,24 +35,49 @@ const About: React.FC = () => {
                 />
               </div>
             </Col>
-            <Col md={8} className="text-center text-md-start">
-              <p className="mb-3 text-gray-200">{profile.bio}</p>
-              <p className="mb-3 text-gray-200">
+
+            <Col xs={12} md={8}>
+              <motion.p
+                className="mb-3 text-gray-200 fs-6"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                {profile.bio}
+              </motion.p>
+              
+              <motion.p
+                className="mb-3 text-gray-200 fs-6"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 I am passionate about building robust, scalable, and user-friendly
-                applications. My journey involves continuously learning and
-                exploring new technologies to deliver innovative solutions.
-              </p>
+                applications. Continuously learning and exploring new technologies
+                to deliver innovative solutions is what drives me.
+              </motion.p>
+
               {currentEducation && (
-                <p className="mb-3 fw-semibold text-primary">
-                  <span className="text-secondary me-2">
-                    <FaLightbulb className="d-inline-block align-middle" />
-                  </span>
+                <motion.p
+                  className="mb-3 fw-semibold text-primary fs-6 d-flex align-items-center"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                  <FaGraduationCap className="me-2 text-secondary" />
                   GPA: {currentEducation.gpa} ({currentEducation.institution})
-                </p>
+                </motion.p>
               )}
-              <p className="text-gray-200">
+
+              <motion.p
+                className="text-gray-200 fs-6 d-flex align-items-center"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                <FaHeart className="me-2 text-danger" />
                 When I'm not coding, you can find me {hobbiesText}.
-              </p>
+              </motion.p>
             </Col>
           </Row>
         </motion.div>
