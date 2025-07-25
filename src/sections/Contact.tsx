@@ -61,12 +61,12 @@ const Contact: React.FC = () => {
                 <div>
                   <h6 className="fw-semibold text-secondary mb-0">GitHub</h6>
                   <a
-                    href={`https://${profile.github}`}
+                    href="https://github.com/christia006"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-decoration-none text-info small"
                   >
-                    {profile.github}
+                    christia006
                   </a>
                 </div>
               </div>
@@ -75,12 +75,12 @@ const Contact: React.FC = () => {
                 <div>
                   <h6 className="fw-semibold text-secondary mb-0">LinkedIn</h6>
                   <a
-                    href={`https://${profile.contact.linkedin}`}
+                    href="https://www.linkedin.com/in/christianhutahaean"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-decoration-none text-info small"
                   >
-                    christian-johannes-hutahaean
+                    christianhutahaean
                   </a>
                 </div>
               </div>
