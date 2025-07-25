@@ -49,47 +49,47 @@ export const workExperience = [
 export const projects = [
   {
     title: "Simpin",
-    Description: ["SimPin: backend Java 23 untuk manajemen koperasi dengan login, transaksi, night mode, dan multi-language."],
+    Description: ["SimPin: Backend Java 23 untuk manajemen kooperatif dengan fitur login, transaksi, mode malam, dan dukungan multibahasa."],
     imageUrl: simpinImage 
   },
   {
     title: "NeuroSort",
-    Description: ["Local AI: scan & classify .txt/.pdf/.docx, fast contextual search, store metadata in PostgreSQL. Built with Python, spaCy, scikit-learn, SQLAlchemy, Streamlit. Private, fast, no API keys."],
+    Description: ["AI Lokal: Pindai dan klasifikasikan berkas .txt/.pdf/.docx, pencarian kontekstual cepat, simpan metadata di PostgreSQL. Dibangun dengan Python, spaCy, scikit-learn, SQLAlchemy, Streamlit. Pribadi, cepat, tanpa kunci API."],
     imageUrl: neurosortImage 
   },
   {
     title: "SummAIze",
-    Description: ["Summarize PDF and .txt files into actionable insights with local AI. Built with Python, FastAPI, spaCy, scikit-learn, SQLAlchemy, React, TypeScript."],
+    Description: ["Ringkas file PDF dan .txt menjadi wawasan yang dapat ditindaklanjuti dengan kecerdasan buatan lokal. Dibangun menggunakan Python, FastAPI, spaCy, scikit-learn, SQLAlchemy, React, dan TypeScript."],
     imageUrl: summaizeImage 
   },
   {
     title: "WargaBuatin",
-    Description: ["Fullstack Digital platform for green action: interactive maps, reports, education, community forum, and events. Built with React, Node.js, Express, PostgreSQL, Leaflet.js, Google Maps API."],
+    Description: ["Fullstack Platform digital lengkap untuk aksi hijau: peta interaktif, laporan, pendidikan, forum komunitas, dan acara. Dibangun dengan React, Node.js, Express, PostgreSQL, Leaflet.js, dan Google Maps API."],
     imageUrl: wargabuatinImage 
   },
   {
     title: "InsightIQ",
-    Description: ["Local user behavior analytics: track clicks, scrolls, and interaction time; store in PostgreSQL; visualize with Streamlit. Built with Python, pandas, scikit-learn, matplotlib, KMeans clustering."],
+    Description: ["Analisis perilaku pengguna lokal: lacak klik, gulir, dan waktu interaksi; simpan di PostgreSQL; visualisasikan dengan Streamlit. Dibangun dengan Python, pandas, scikit-learn, matplotlib, dan clustering KMeans."],
     imageUrl: insightiqImage 
   },
   {
     title: "SkillShare API",
-    Description: [" Go backend for sharing skills and short courses: JWT auth, class management, and user enrollments. Built with Go, Echo, GORM, PostgreSQL."],
+    Description: [" Platform backend untuk berbagi keterampilan dan kursus singkat: Otentikasi JWT, manajemen kelas, dan pendaftaran pengguna. Dibangun dengan Go, Echo, GORM, dan PostgreSQL."],
     imageUrl: skillshareImage 
   },
   {
     title: "BukuNest",
-    Description: ["Modern Laravel platform for digital library management: auth, CRUD books & genres, user profiles, comments, and role-based access. Built with Laravel, PHP, MySQL, JWT, Blade."],
+    Description: ["Platform Laravel modern untuk pengelolaan perpustakaan digital: otentikasi, CRUD buku dan genre, profil pengguna, komentar, dan akses berdasarkan peran. Dibangun dengan Laravel, PHP, MySQL, JWT, dan Blade."],
     imageUrl: bukuImage 
   },
   {
     title: "GuardForms",
-    Description: ["Backend Secure Google Forms data sync to PostgreSQL with JWT auth, audit logs, admin dashboard, multi-role access, and export features. Built with Node.js, Express.js, React, PostgreSQL."],
+    Description: ["Sinkronisasi data Google Forms yang aman ke PostgreSQL dengan otentikasi JWT, log audit, dasbor admin, akses multi-peran, dan fitur ekspor. Dibangun dengan Node.js, Express.js, React, dan PostgreSQL."],
     imageUrl: guardImage 
   },
   {
     title: "BrightSeeds",
-    Description: ["Fun learning & puzzle games: reading, writing, math, path finding, Wumpus World AI, and pattern challenges. Built with React + Vite."],
+    Description: ["Permainan belajar yang menyenangkan dan teka-teki: membaca, menulis, matematika, pencarian jalur, kecerdasan buatan Wumpus World, dan tantangan pola. Dibangun dengan React + Vite."],
     imageUrl: brightImage 
   },
 ];
