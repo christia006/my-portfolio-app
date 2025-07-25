@@ -8,13 +8,24 @@ const Experience: React.FC = () => (
     <Container>
       <SectionHeader title="Experience" subtitle="Where I've Worked" />
       {workExperience.map((work, idx) => (
-        <Card key={idx} className="mb-3 bg-gray-800 text-light shadow-sm">
-          <Card.Body>
-            <Card.Title className="fw-bold text-primary">{work.title} @ {work.company}</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">{work.duration}</Card.Subtitle>
-            <ul className="mb-0">
+        <Card
+          key={idx}
+          className="mb-4 shadow border-0"
+          style={{
+            background: 'linear-gradient(135deg, #ffffff, #f8f9fa)',
+            borderRadius: '1rem'
+          }}
+        >
+          <Card.Body className="text-dark"> {/* text-dark: teks jadi hitam untuk kontras */}
+            <Card.Title className="fw-bold text-primary mb-2">
+              {work.title} @ {work.company}
+            </Card.Title>
+            <Card.Subtitle className="mb-3 text-muted small">{work.duration}</Card.Subtitle>
+            <ul className="ps-3 mb-0"> {/* ps-3: padding left untuk list */}
               {work.description.map((desc, i) => (
-                <li key={i}>{desc}</li>
+                <li key={i} className="mb-1 small"> {/* small: ukuran font sedikit lebih kecil */}
+                  {desc}
+                </li>
               ))}
             </ul>
           </Card.Body>
