@@ -7,9 +7,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 interface ProjectCardProps {
   project: {
     title: string;
-    year: string;
-    // description: string; // dihapus karena sudah tidak dipakai
-    technologies: string[];
+    Description: string[];
     imageUrl?: string;
   };
 }
@@ -35,22 +33,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Card.Body className="d-flex flex-column p-3">
           <div>
             <Card.Title className="h6 fw-bold text-primary mb-2">
-              {project.title}{' '}
-              <span className="text-light fs-6 ms-2">({project.year})</span>
+              {project.title}
             </Card.Title>
-            {/* Deskripsi dihapus */}
-          </div>
-          <div className="mt-auto">
-            <h6 className="fw-semibold text-secondary mb-2">Technologies:</h6>
-            <div className="d-flex flex-wrap">
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="badge bg-dark text-white me-2 mb-2 px-2 py-1 rounded-pill"
-                  style={{ fontSize: '0.75rem' }}
-                >
-                  {tech}
-                </span>
+            <div className="text-secondary small">
+              {project.Description.map((desc, index) => (
+                <p key={index} className="mb-1">{desc}</p>
               ))}
             </div>
           </div>

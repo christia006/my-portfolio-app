@@ -6,6 +6,9 @@ import summaizeImage from '../images/summaize.png';
 import wargabuatinImage from '../images/wargabuatin.png';
 import insightiqImage from '../images/insightiq.png';
 import skillshareImage from '../images/skillshare.png';
+import bukuImage from '../images/buku.png';
+import guardImage from '../images/guard.png';
+import brightImage from '../images/bright.png';
 
 
 export const profile = {
@@ -88,14 +91,13 @@ export const skills = {
 
 export const workExperience = [
   {
-    title: "Machine Learning Intern",
-    company: "Suvidha Foundation",
+    title: "Fullstack D",
+    company: "Codvedha Technology ",
     duration: "JULI - AGUSTUS 2025",
     description: [
-      "Pengumpulan Dataset 1000 artikel berita India untuk analisis data",
-      "Melaksanakan kampanye fundraising beserta penanaman pohon sebagai wujud kontribusi sosial",
-      "Mempelajari serta merangkum research paper terkini di bidang kecerdasan buatan",
-      "Membangun hingga mendistribusikan model AI/ML sederhana",
+      "Membangun full-stack app (MERN/MEVN) dengan JWT dan role-based access.",
+      "Integrasi WebSockets (Socket.io) untuk notifikasi real-time.",
+      "Mendesain GraphQL API (Apollo Server) dengan autentikasi.",
     ],
   },
 ];
@@ -117,35 +119,50 @@ export const projects = [
   {
     title: "Simpin",
   
-    technologies: ["Java Swing", "MariaDB", "MVC"],
-    imageUrl: simpinImage // Gunakan variabel yang diimpor
+    Description: ["SimPin: backend Java  untuk manajemen koperasi dengan login, transaksi, night mode, dan multi-language."],
+    imageUrl: simpinImage 
   },
   {
     title: "NeuroSort",
    
-    technologies: ["NLP", "TF-IDF", "spaCy", "PostgreSQL"],
-    imageUrl: neurosortImage // Gunakan variabel yang diimpor
+    Description: ["AI Lokal: Pindai dan klasifikasikan berkas .txt/.pdf/.docx, pencarian kontekstual cepat, simpan metadata di PostgreSQL. Dibangun dengan Python, spaCy, scikit-learn, SQLAlchemy, Streamlit. Pribadi, cepat, tanpa kunci API."],
+    imageUrl: neurosortImage 
   },
   {
     title: "SummAIze",
     
-    technologies: ["React", "FastAPI", "Python", "spaCy", "scikit-learn", "CI/CD"],
-    imageUrl: summaizeImage // Gunakan variabel yang diimpor
+    Description: ["Ringkas file PDF dan .txt  dengan kecerdasan buatan lokal. Dibangun dengan Python, FastAPI, spaCy, scikit-learn, SQLAlchemy, React, dan TypeScript."],
+    imageUrl: summaizeImage 
   },
   {
     title: "WargaBuatin",
     
-    technologies: ["ReactJS", "Vite", "Node.js", "Express", "PostgreSQL"],
-    imageUrl: wargabuatinImage // Gunakan variabel yang diimpor
+    Description: ["Platform digital fullstack untuk aksi hijau: peta interaktif, laporan, pendidikan, forum komunitas, dan acara. Dibangun dengan React, Node.js, Express, PostgreSQL, dan Leaflet.js."],
+    imageUrl: wargabuatinImage 
   },
   {
     title: "InsightIQ",
-    technologies: ["KMeans", "Event-driven", "Data Analytics"],
-    imageUrl: insightiqImage // Gunakan variabel yang diimpor
+    Description: ["Analisis perilaku pengguna lokal: lacak klik, gulir, dan waktu interaksi; simpan di PostgreSQL; visualisasikan dengan Streamlit. Dibangun dengan Python, pandas, scikit-learn, matplotlib, dan clustering KMeans."],
+    imageUrl: insightiqImage 
   },
   {
     title: "SkillShare API",
-    technologies: ["Go", "Echo", "JWT", "GORM", "PostgreSQL", "Swagger"],
-    imageUrl: skillshareImage // Gunakan variabel yang diimpor
+    Description: [" Go backend for sharing skills and short courses: JWT auth, class management, and user enrollments. Built with Go, Echo, GORM, PostgreSQL."],
+    imageUrl: skillshareImage 
+  },
+   {
+    title: "BukuNest",
+    Description: [" Modern Laravel platform for digital library management: auth, CRUD books & genres, user profiles, comments, and role-based access. Built with Laravel, PHP, MySQL, JWT, Blade."],
+    imageUrl: bukuImage 
+  },
+  {
+    title: "GuardForms",
+    Description: [" Backend Secure Google Forms data sync to PostgreSQL with JWT auth, audit logs, admin dashboard, multi-role access, and export features. Built with Node.js, Express.js, React, PostgreSQL."],
+    imageUrl: guardImage 
+  },
+    {
+    title: "BrightSeeds",
+    Description: [" Fun learning & puzzle games: reading, writing, math, path finding, Wumpus World AI, and pattern challenges. Built with React + Vite."],
+    imageUrl: brightImage 
   },
 ];
