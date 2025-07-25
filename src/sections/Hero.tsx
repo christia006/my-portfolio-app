@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
 import { Mesh } from 'three';
+import { Typewriter } from 'react-simple-typewriter';
 import { profile } from '../data/portfolioData';
 
 const AnimatedSphere: React.FC = () => {
@@ -92,7 +93,9 @@ const Hero: React.FC = () => {
             }}
           >
             Hi, I'm{' '}
-            <span style={{ color: '#0d6efd' }}>{profile.name.split(' ')[0]}</span>
+            <span style={{ color: '#0d6efd' }}>
+              {profile.name.split(' ')[0]}
+            </span>
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +104,20 @@ const Hero: React.FC = () => {
             className="lead fw-semibold mb-4"
             style={{ color: '#6c757d' }}
           >
-            {profile.title}
+            <Typewriter
+              words={[
+                'I can Full Stack Developer',
+                'I can Software Engineering',
+                'I can Machine Learning',
+                'And I love building products 🚀',
+              ]}
+              loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={40}
+              delaySpeed={1500}
+            />
           </motion.p>
           <motion.a
             href="#contact"
@@ -116,15 +132,14 @@ const Hero: React.FC = () => {
 
       {/* Responsive custom style */}
       <style jsx>{`
-  @media (max-width: 767.98px) {
-    .container > div:first-child {
-      max-width: 100%;
-      height: 900px; /* perbesar tinggi di mobile, default tadi 300px */
-      margin-bottom: 1.5rem;
-    }
-  }
-`}</style>
-
+        @media (max-width: 767.98px) {
+          .container > div:first-child {
+            max-width: 100%;
+            height: 900px;
+            margin-bottom: 1.5rem;
+          }
+        }
+      `}</style>
     </section>
   );
 };
